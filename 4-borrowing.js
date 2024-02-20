@@ -8,5 +8,5 @@ let map = {one: true, two: true, hasOwnProperty: true};
 
 // !!! Fix the call code below, do not modify the object above. !!!
 
-console.log(map.hasOwnProperty("one"));
+console.log(Object.prototype.hasOwnProperty.call(map,"one"));
 // → true

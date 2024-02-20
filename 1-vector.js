@@ -6,20 +6,20 @@
 
 // Your code here.
 
-class Vec{
-    constructor(x,y){
+class Vec {
+    constructor(x, y) {
         this.x = x
         this.y = y
     }
-    get length(){
-        return Math.sqrt(this.x**2+this.y**2)
+    get length() {
+        return Math.sqrt(this.x ** 2 + this.y ** 2)
     }
-    plus(vec){
+    plus(vec) {
         this.x += vec.x
         this.y += vec.y
         return this
     }
-    minus(vec){
+    minus(vec) {
         this.x -= vec.x
         this.y -= vec.y
         return this
