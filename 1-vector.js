@@ -15,14 +15,10 @@ class Vec {
         return Math.sqrt(this.x ** 2 + this.y ** 2)
     }
     plus(vec) {
-        this.x += vec.x
-        this.y += vec.y
-        return this
+        return new Vec(this.x+vec.x,this.y+vec.y)
     }
     minus(vec) {
-        this.x -= vec.x
-        this.y -= vec.y
-        return this
+        return new Vec(this.x-vec.x,this.y-vec.y)
     }
 }
 
